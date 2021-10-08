@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <form>
+        <table>
+            <div>
+                <tr>
+                    <td> <label>username</label></td>
+                    <td><input type="text" name="username" required maxlength="10" /></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+
+                    <td><label>password</label></td>
+                    <td><input type="password" name="password" required /></td>
+                </tr>
+            </div>
+
+            <div>
+                <tr>
+                    <td> <label>gender</label></td>
+                    <td> <input type="radio" name="gender" checked>male</input>
+
+                        <input type="radio" name="gender">female</input>
+                    </td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td> <label>date of birth</label></td>
+                    <td><input type="date" name="bdate" /></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td> <label>adress</label></td>
+                    <td> <textarea> </textarea></td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                    <td><label>cource</label"></td>
+                   <td> <select name="cource">
+                       <option>java</option>
+                     <option>css</option>
+                 <option selected>html </option>
+                         <option>js</option>
+                    </select></td>
+                </tr>
+            </div>
+        
+
+        <div>
+                <tr>
+                    <td><label>button</label></td>
+                    <td> <input type="submit" name="button" /></td>
+                    <td><input type="reset" name="reset"></td>
+                </tr>
+            </div>
+
+        </table>
+
+    </form>
+</body>
+
+</html>

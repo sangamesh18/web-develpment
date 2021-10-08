@@ -1,0 +1,18 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+nav {
+    background-color: darkcyan;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav ul li {
+    list-style-type: none;
+    float: left;
+    padding: 5px;
+}
