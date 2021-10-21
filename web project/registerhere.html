@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>signup</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body id="s">
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light py-3">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                            </li>
+
+            </ul>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="row m-sm-0"><img src="img/reg.jpg " ; alt="" class="img-fluid" width="700px"></div>
+            </div>
+
+            <div class="col-sm-4">
+                <h1>Registration</h1>
+                <br>
+                <label>First Name:</label>
+                <input type="text" class="First Name" id="FirstName" placeholder="Enter Your First Name" required>
+                <br><br>
+                <label>Contact Num:</label>
+                <input type="tel" class="number" placeholder="Type Your Phone Num" id="tel" required><br><br>
+                <label>Email:</label>
+                <input type="email" class="email" placeholder="Type Your Email" id="email" required><br><br>
+                <label>Password:</label>
+                <input type="password" class="password" placeholder="Enter Your Paasword " id="password" required><br><br>
+                <label>Confirm Password:</label>
+                <input type="password" class="password" placeholder="Enter Your Confirm Password" id="confirmpassword" required><br><br>
+
+
+                <div class="row m-auto "> <button type="submit " class="btn" onclick="validate()">Register</button> </div>
+                <div type="text" small class="btn">Already Have An Account? </div>
+                <a href="login.html" type="submit" class="text-danger">Login Here </a>
+                <br>
+                <div type="text" small class="btn">OR</div>
+                <a href="home.html" type="submit" class="text-danger">Home </a>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+<script>
+    function validate() {
+        var username = document.getElementById("FirstName").value;
+        var teliphone = document.getElementById("tel").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var confirmpassword = document.getElementById("confirmpassword").value;
+
+        //   alert("your FirstName" + username + "your Contact Num is" + teliphone + "your email id" + email + "your password" + password + "your confirmpassword" + confirmpassword);
+        if (username == "") {
+            alert("plz enter ur FirstName");
+        } else if (teliphone == "") {
+            alert("plz enter ur tel num");
+        } else if (email == "") {
+            alert("plz enter ur email");
+        } else if (username == "sangamesh" && email == "sangu19@gmail.com " && password == "123") {
+            alert("login succesfully");
+        } else {
+            alert("data is not correct");
+        }
+    }
+</script>
+<script>
+    // var x = 10;
+    //console.log(x);
+    //var x = 20;
+    // console.log(x);
+    //  let x = 10;
+    //  console.log(x);
+    //let x = 20;
+    // console.log(x);
+    // const x = 10;
+    // console.log(x);
+    // const x = 20;
+    //  console.log(x);
+</script>
+
+</html>

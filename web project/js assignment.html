@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>java script</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+
+<body style="background-color:darkturquoise">
+    <div>
+        <p id="name"></p>
+        <p id="name1"></p>
+        <p id="name2"></p>
+        <p id="name3"></p>
+        <p id="name4"></p>
+        <p id="name5"></p>
+        <p id="name6"></p>
+        <script>
+            let name = "my name is sangamesh";
+            document.getElementById("name").innerHTML = name.search("is");
+
+            let name1 = "my name is sangamesh my father name is omkar";
+            document.getElementById("name1").innerHTML = name1.match(/name/g);
+
+            let text = `Hello world!`;
+            document.getElementById("name2").innerHTML = text;
+
+            let text1 = `Hello world! ("hey there..")`;
+            document.getElementById("name3").innerHTML = text1;
+
+            let firstName = "sangamesh";
+            let lastName = "houshetty";
+            let text2 = `Welcome ${firstName} ${lastName}!`;
+            document.getElementById("name4").innerHTML = text2;
+
+            let Cost = 10;
+            let GST = 2;
+            let total = `Total: ${(Cost+GST).toFixed(2)}`;
+            document.getElementById("name5").innerHTML = total;
+
+            let header = "Templates Literals";
+            let tags = ["template strings", "strings templets", "back-tics"];
+
+            let html = `<h3>${header}</h3><ul>`;
+
+            for (const x of tags) {
+                html += `<li>${x}</li>`;
+            }
+
+            html += `</ul>`;
+            document.getElementById("name6").innerHTML = html;
+        </script>
+
+    </div>
+</body>

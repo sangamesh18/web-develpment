@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-sm bg-light">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">News</a>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"> references</a>
+                                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-6 " id="cd">
+                <div class=" mt-auto m-sm-5 ">
+                    <img src="img/loginnn.jpg " alt="" class="img-fluid" width="350px "></div>
+            </div>
+
+
+            <div class="col-sm-6" id="ab">
+                <h1>Login</h1><br>
+                <p>Please Enter Your Login and Password</p>
+                <label>Username</label>
+
+                <input type="text " class="Username" placeholder="Type Your Name " id="email">
+                <br><br>
+                <label>Password</label>
+
+                <input type="password" class="password1" placeholder="type Your Password " id="password">
+                <br><br>
+                <a href="# " class="text ">Forgot Password?</a>
+                <br><br>
+                <div class="row m-auto "> <button type="submit " class="btn btn-red " onclick="validate()">Login</button> </div>
+                <br>
+
+                <div type="text " small class="btn mr-lg-auto ">Dont have an account?</div>
+                <a href="registerhere.html " type="submit " class="text-danger ">Register Here </a>
+
+            </div>
+        </div>
+    </div>
+    <div>
+
+        <section class="footer py-1 footer1 ">
+            <div class="container py-5 ">
+
+                <p class="copyright m-auto text-center ">Copyright <i class="fa fa-copyright ">2021</i>All Rights Reserved</p>
+            </div>
+        </section>
+    </div>
+    <script>
+        var charname = "sangu";
+        var x = 10;
+        var y = 20;
+        console.log(charname);
+        console.log(x);
+        console.log(y);
+        console.log(x + y);
+        alert(charname);
+
+        function changes() {
+            document.getElementById("demo").innerHTML = "this is my first JS program"
+        }
+    </script>
+    <div id="demo">
+        <button type="submit" onclick="changes()">submit</button>
+
+    </div>
+    <script>
+        function add() {
+            x = 10;
+            y = 30;
+            z = x + y;
+            document.getElementById("sum").innerHTML = z;
+        }
+    </script>
+    <div id="sum">
+        <button type="submit" onclick="add()">sum of two numbers</button>
+
+    </div>
+    <script>
+        function sub() {
+            x = 50;
+            y = 20;
+            z = x - y;
+            document.getElementById("sub").innerHTML = x - y;
+        }
+    </script>
+    <div id="sub">
+        <button type="submit" onclick="sub()">substract of two num</button>
+
+    </div>
+    <script>
+        function mul() {
+            x = 5;
+            y = 5;
+            z = x * y;
+            document.getElementById("mul").innerHTML = z;
+        }
+    </script>
+    <div id="mul">
+        <button type="submit" onclick="mul()">multiplication of two num</button>
+    </div>
+    <script>
+        function div() {
+            x = 5;
+            y = 5;
+            z = x / y;
+            document.getElementById("div").innerHTML = z;
+        }
+    </script>
+    <div id="div">
+        <button type="submit" onclick="div()">division of two num</button>
+    </div>
+    <div id="vals">
+        <button type="submit" onclick="document.write(1200+1800)">submit </button>
+
+    </div>
+    <div id="vals1">
+
+        <button type="submit" onclick="window.print()">print the page </button>
+
+    </div>
+    <script>
+        function validate() {
+            var username = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+            alert("your username" + username + "your password is" + password);
+        }
+    </script>
+    <script>
+        function validate() {
+            var username = document.getElementsByClassName("Username").value;
+            var password = document.getElementsByClassName("password1").value;
+            alert("your username" + username + "your password is" + password);
+            console.log(username);
+        }
+    </script>
+</body>
+
+</html>
