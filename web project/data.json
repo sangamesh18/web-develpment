@@ -1,0 +1,16 @@
+[{
+    "Name": "Xworkz",
+    "Branches": "3",
+    "Trainers": "30",
+    "Batch": "10"
+}, {
+    "Name": "Jsprider",
+    "Branches": "9",
+    "Trainers": "70",
+    "Batch": "40"
+}, {
+    "Name": "infosys",
+    "Branches": "2",
+    "Trainers": "5",
+    "Batch": "1"
+}]

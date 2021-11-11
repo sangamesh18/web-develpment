@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>database</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='homepage.css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="novels" class="">
+        <div>
+            <h1>Know More About Novels Details</h1>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Poet</th>
+                    <th>Year</th>
+                    <th>Cost</th>
+                </thead>
+                <tbody id="infos">
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <section id="comics">
+        <div>
+            <h1>Know More About Comics Details</h1>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Poet</th>
+                    <th>Year</th>
+                    <th>Cost</th>
+                </thead>
+                <tbody id="infoss">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <section id="historic">
+        <div>
+            <h1>Know More About Historic Details</h1>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Poet</th>
+                    <th>Year</th>
+                    <th>Cost</th>
+                </thead>
+                <tbody id="infosss">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="documentaryBook">
+        <div>
+            <h1>Know More About DocumentaryBook Details</h1>
+        </div>
+        <div>
+            <table>
+                <thead>
+                    <th>Name</th>
+                    <th>Poet</th>
+                    <th>Year</th>
+                    <th>Cost</th>
+                </thead>
+                <tbody id="infossss">
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script>
+        $(document).ready(function() {
+            $.getJSON("Novels.json", function onlode(data) {
+                var info = "";
+                $.each(data, function(key, value) {
+                    info += '<tr>';
+                    info += '<td>' + value.Name + '</td>';
+                    info += '<td>' + value.Poet + '</td>';
+                    info += '<td>' + value.Year + '</td>';
+                    info += '<td>' + value.Cost + '</td>';
+                    info += '</tr>';
+                });
+                $('#infos').append(info);
+            });
+        });
+        $(document).ready(function() {
+            $.getJSON("Comics.json",
+                function onlode1(data) {
+                    var info = "";
+                    $.each(data, function(key, value) {
+                        info += '<tr>';
+                        info += '<td>' + value.Name + '</td>';
+                        info += '<td>' + value.Poet + '</td>';
+                        info += '<td>' + value.Year + '</td>';
+                        info += '<td>' + value.Cost + '</td>';
+                        info += '</tr>';
+
+
+                    });
+                    $('#infoss').append(info);
+                });
+        });
+        $(document).ready(function() {
+            $.getJSON("Historic.json",
+                function onlode2(data) {
+                    var info = "";
+                    $.each(data, function(key, value) {
+                        info += '<tr>';
+                        info += '<td>' + value.Name + '</td>';
+                        info += '<td>' + value.Poet + '</td>';
+                        info += '<td>' + value.Year + '</td>';
+                        info += '<td>' + value.Cost + '</td>';
+                        info += '</tr>';
+
+
+                    });
+                    $('#infosss').append(info);
+                });
+        });
+        $(document).ready(function() {
+            $.getJSON("DocumentaryBook.json",
+                function onlode3(data) {
+                    var info = "";
+                    $.each(data, function(key, value) {
+                        info += '<tr>';
+                        info += '<td>' + value.Name + '</td>';
+                        info += '<td>' + value.Poet + '</td>';
+                        info += '<td>' + value.Year + '</td>';
+                        info += '<td>' + value.Cost + '</td>';
+                        info += '</tr>';
+
+
+                    });
+                    $('#infossss').append(info);
+                });
+        });
+    </script>
+
+</body>
+
+</html>

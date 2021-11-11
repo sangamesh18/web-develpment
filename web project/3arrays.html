@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>boot</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style1.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+
+    <div class="row"> <button type="submit " class="btn" onclick="car()">Car</button> </div>
+    <p id="car">Lists of cars<br></p>
+    <div class="row"> <button type="submit " class="btn" onclick="bike()">Bike</button> </div>
+    <p id="bike">List of Bikes<br></p>
+    <div class="row"> <button type="submit " class="btn" onclick="plane()">Planes</button> </div>
+    <p id="plane">List of Planes<br></p>
+
+    <script>
+        function car() {
+            const car = ["audi", "honda", "tesla"];
+            for (i = 0; i < car.length; i++) {
+                document.getElementById("car").innerHTML += car[i] + "<br>";
+            }
+        }
+
+        function bike() {
+            const bike = ["pulsur", "NS", "duke"];
+            for (i = 0; i < bike.length; i++) {
+                document.getElementById("bike").innerHTML += bike[i] + "<br>";
+            }
+        }
+
+        function plane() {
+            const plane = ["plane1", "plane2", "plane3"];
+            for (i = 0; i < plane.length; i++) {
+                document.getElementById("plane").innerHTML += plane[i] + "<br>";
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

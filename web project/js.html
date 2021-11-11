@@ -22,36 +22,42 @@
         <p id="substring1"></p>
         <p id="substring2"></p>
         <p id="substring3"></p>
-        <p id="substring4"></p>
+        <p id="forloop"></p>
+
     </div>
 
     <script>
-        function paramet(a, b) {
-            return a + b;
+        //   function paramet(a, b) {
+        //      return a + b;
+        // }
+        //  document.getElementById("demo").innerHTML = paramet(25, 50);
+        //  const car = ["houda", "audi", "lambo", "ranger"];
+        //  console.log(car.sort());
+        //  document.getElementById("arrays").innerHTML = car.sort();
+        //  const bike = ["pulsur", "ktm", "duke", "NS"];
+        //  document.getElementById("bike").innerHTML = bike.reverse();
+        //   const snekers = ["gucci", "lava", "american", "bata"];
+        //  document.getElementById("snekers").innerHTML = bike.length;
+        // const name = "my name is sangamesh";
+        // document.getElementById("slice").innerHTML = name.slice(11, 20);
+        // let names = "welcome back";
+        // document.getElementById("substring").innerHTML = names.substring(0, 8);
+        // let str = "hello this is me";
+        // document.getElementById("substr").innerHTML = str.substr(6, 10)
+        // let names1 = "welcome back guys ";
+        //  document.getElementById("substring1").innerHTML = names1.indexOf("back");
+        //  let names2 = "welcome back guys back";
+        //  document.getElementById("substring2").innerHTML = names2.lastIndexOf("back");
+        // let names3 = "welcome back guys back";
+        //  document.getElementById("substring3").innerHTML = names3.startsWith("welcome");
+        //  let names4 = "welcome back guys back";
+        //  document.getElementById("substring4").innerHTML = names4.endsWith("welcome");
+        const bike = ["pulsur", "honda", "here", "NS"];
+        for (i = 0; i < bike.length; i++) {
+            document.getElementById("forloop").innerHTML += bike[i] + "</br>";
         }
-        document.getElementById("demo").innerHTML = paramet(25, 50);
-        const car = ["houda", "audi", "lambo", "ranger"];
-        console.log(car.sort());
-        document.getElementById("arrays").innerHTML = car.sort();
-        const bike = ["pulsur", "ktm", "duke", "NS"];
-        document.getElementById("bike").innerHTML = bike.reverse();
-        const snekers = ["gucci", "lava", "american", "bata"];
-        document.getElementById("snekers").innerHTML = bike.length;
-        const name = "my name is sangamesh";
-        document.getElementById("slice").innerHTML = name.slice(11, 20);
-        let names = "welcome back";
-        document.getElementById("substring").innerHTML = names.substring(0, 8);
-        let str = "hello this is me";
-        document.getElementById("substr").innerHTML = str.substr(6, 10)
-        let names1 = "welcome back guys ";
-        document.getElementById("substring1").innerHTML = names1.indexOf("back");
-        let names2 = "welcome back guys back";
-        document.getElementById("substring2").innerHTML = names2.lastIndexOf("back");
-        let names3 = "welcome back guys back";
-        document.getElementById("substring3").innerHTML = names3.startsWith("welcome");
-        let names4 = "welcome back guys back";
-        document.getElementById("substring4").innerHTML = names4.endsWith("welcome");
     </script>
+
 </body>
 
 </html>

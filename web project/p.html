@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+    <body>
+        <select id="arr">
+        <option id="select">select</option>
+        <option id="Cars">car</option>
+        <option id="Bike">bike</option>
+        <option id="Plane">plane</option>
+    </select>
+        <p id="arr1"></p>
+        <button type="submit" onclick="arrays()">submit</button>
+        <script>
+            function arrays() {
+                var select = document.getElementById("arr").value;
+
+                if (select == "Car") {
+                    var car = ["Alto", "Tesla", "Mahindra"];
+                    for (var i = 0; i < car.length; i++) {
+                        document.getElementById("arr1").innerHTML += car[i] + "</br>"
+                    }
+                } else if (select == "Bike") {
+                    var bike = ["11", "22", "33"];
+                    for (var i = 0; i < bike.length; i++) {
+                        document.getElementById("arr1").innerHTML += bike[i] + "</br>"
+                    }
+
+
+                } else if (select == "plane") {
+                    var plane = ["111", "222", "333"];
+                    for (var i = 0; i < plane.length; i++) {
+                        document.getElementById("arr1").innerHTML += plane + "</br>"
+                    }
+
+                } else {
+                    alert("choose one")
+                }
+            }
+        </script>
+
+    </body>
+</head>
+
+</html>

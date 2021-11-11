@@ -1,0 +1,47 @@
+<html>
+
+<body>
+
+    <form>
+        <div id="array">
+            <input type="radio" name="arrays" id="arr1">car<br>
+            <input type="radio" name="arrays" id="arr2">bike<br>
+            <input type="radio" name="arrays" id="arr3">plane<br>
+        </div>
+    </form>
+
+    <p id="ar"></p>
+
+    <button type="submit" onclick="submits()">submit</button>
+
+</body>
+
+</html>
+<script>
+    function submits() {
+        var select = document.getElementById("arr1").value;
+        alert(select)
+        if (select == "car") {
+            var car = ["1", "2", "3"];
+            for (var i = 0; i < car.length; i++) {
+                document.getElementById("ar").innerHTML += car[i] + "<br>";
+            }
+        } else if (select == "bike") {
+            var bike = ["11", "22", "33"];
+            for (var i = 0; i < bike.length; i++) {
+                document.getElementById("ar").innerHTML += bike[i] + "<br>";
+            }
+        } else if (select == "plane") {
+            var plane = ["111", "222", "333"];
+            for (var i = 0; i < plane.length; i++) {
+                document.getElementById("ar").innerHTML += plane[i] + "<br>";
+            }
+        } else {
+            alert("select any one option")
+        }
+    }
+</script>
+
+</body>
+
+</html>

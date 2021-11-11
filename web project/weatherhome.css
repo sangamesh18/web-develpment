@@ -1,0 +1,29 @@
+#bd {
+    background-image: url(img/weather.jpg);
+    text-align: center;
+}
+
+#h {
+    margin-top: 5%;
+    font-style: italic;
+}
+
+#nav {
+    margin-top: 1%;
+    padding-left: 5%;
+    font-size: 130%;
+    font-style: italic;
+    width: 110%;
+}
+
+#foot {
+    margin-top: 21%;
+    padding: 0.5%;
+    background-color: black;
+    color: blanchedalmond;
+}
+
+#xw {
+    width: 10%;
+    margin-right: 500%;
+}

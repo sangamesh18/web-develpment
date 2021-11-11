@@ -1,0 +1,34 @@
+* {
+    margin: 0%;
+    padding: 0%
+}
+
+#h {
+    text-align: center;
+    margin-top: 02%;
+    padding: 01%;
+    color: burlywood;
+    border: 3px solid black;
+}
+
+#p {
+    font-size: 23px;
+    margin-top: 02%;
+}
+
+#nav {
+    margin-top: 1%;
+    padding-left: 5%;
+    font-size: 130%;
+    font-style: italic;
+    width: 110%;
+}
+
+#xw {
+    width: 10%;
+    margin-right: 500%;
+}
+
+#body {
+    background-color: cadetblue;
+}

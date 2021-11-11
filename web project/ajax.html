@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax</title>
+    <script src="data.asp"></script>
+</head>
+
+<body>
+    <h1>today is ajax class (TEXT)</h1>
+    <div>
+        <p id="change">hello welcome to ajax world</p>
+        <button type="submit" onclick="char()">change into text</button>
+    </div>
+    <h1>today is ajax class (URL)</h1>
+    <div>
+        <p id="change1">hello welcome to ajax world</p>
+        <button type="submit" onclick="char1()">change into URL</button>
+    </div>
+    <h1>today is ajax class(TYPE)</h1>
+    <div>
+        <p id="change2">hello welcome to ajax world</p>
+        <button type="submit" onclick="char2()">change into TYPE</button>
+    </div>
+    <h1>today is ajax class (getAllResponseHeaders)</h1>
+    <div>
+        <p id="change3">hello welcome to ajax world</p>
+        <button type="submit" onclick="char3()">change into getAllResponseHeaders</button>
+    </div>
+    <h1>today is ajax class (getResponseHeader)</h1>
+    <div>
+        <p id="change4">hello welcome to ajax world</p>
+        <button type="submit" onclick="char4()">change into getResponseHeader</button>
+    </div>
+
+</body>
+
+<script>
+    function char() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            document.getElementById("change").innerHTML = this.responseText;
+        }
+        xhttp.open("GET", "data.asp");
+        xhttp.send();
+    }
+</script>
+<script>
+    function char1() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            document.getElementById("change1").innerHTML = this.responseURL;
+        }
+        xhttp.open("GET", "data.asp");
+        xhttp.send();
+    }
+</script>
+<script>
+    function char2() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            document.getElementById("change2").innerHTML = this.responseType;
+        }
+        xhttp.open("GET", ".asp");
+        xhttp.send();
+    }
+</script>
+<script>
+    function char3() {
+
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            document.getElementById("change3").innerHTML = this.getAllResponseHeaders();
+        }
+        xhttp.open("GET", "data.asp");
+        xhttp.send();
+    }
+</script>
+<script>
+    function char4() {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onload = function() {
+            document.getElementById("change4").innerHTML = this.getResponseHeader("Last-Modified");
+        }
+        xhttp.open("get", "data.asp");
+        xhttp.send();
+    }
+</script>
+
+</html>

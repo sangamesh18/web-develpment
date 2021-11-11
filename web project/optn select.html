@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+    <body>
+
+
+        <select name="arr" id="arr">
+        <option id="select">select</option>
+    <option id="Cars">Cars</option>
+    <option id="Bikes">Bikes</option>
+    <option id="Planes">Planes</option>
+ 
+            </select>
+        <p id="ar"></p>
+        <button type="submit" onclick="submits()">submit</button>
+        <script>
+            function submits() {
+                var select = document.getElementById("arr").value;
+                //alert(select)
+
+                if (select == "Cars") {
+                    var Cars = ["Mahindra", "Tesla", "Shift"];
+                    for (var i = 0; i < Cars.length; i++) {
+                        document.getElementById("ar").innerHTML += Cars[i] + "<br>";
+                    }
+                } else if (select == "Bikes") {
+                    var Bikes = ["Pulser", "Duke", "KTM"];
+                    for (var i = 0; i < Bikes.length; i++) {
+                        document.getElementById("ar").innerHTML += Bikes[i] + "<br>";
+                    }
+                } else if (select == "Planes") {
+                    var plane = ["Martin", "DC3", "ME45"];
+                    for (var i = 0; i < Planes.length; i++) {
+                        document.getElementById("ar").innerHTML += Planes[i] + "<br>";
+                    }
+                } else {
+                    alert("select any onr option")
+                }
+            }
+        </script>
+    </body>
+</head>
+
+</html>

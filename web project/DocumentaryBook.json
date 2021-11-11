@@ -1,0 +1,21 @@
+[{
+    "Name": "One with Others",
+    "Poet": "C.D. Wright",
+    "Year": "2000",
+    "Cost": "850"
+}, {
+    "Name": "Leaves of Grass",
+    "Poet": "Walt Whitman",
+    "Year": "2002",
+    "Cost": "999"
+}, {
+    "Name": "Ariel",
+    "Poet": "Sylvia Plath",
+    "Year": "2006",
+    "Cost": "550"
+}, {
+    "Name": "Duino Elegies",
+    "Poet": "Rainer Maria Rilke",
+    "Year": "2010",
+    "Cost": "1200"
+}]

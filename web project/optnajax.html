@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>ajax</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='data.ajax'></script>
+</head>
+
+
+<head>
+
+    <body>
+
+
+        <select name="data" id="ajax">
+        <option id="select">select</option>
+    <option id="Cars">Cars</option>
+    <option id="Bikes">Bikes</option>
+   
+            </select>
+        <p id="aj"></p>
+        <p id="aj1"></p>
+        <button type="submit" onclick="onloads()">submit</button>
+        <script>
+            function onloads() {
+                const xhttp = new XMLHttpRequest("cars");
+                xhttp.onload = function() {
+                    document.getElementById("aj").innerHTML = this.responseText;
+                }
+
+                xhttp.open("GET", "bike.ajax")
+                xhttp.send();
+            }
+        </script>
+        <script>
+            function onloads() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    document.getElementById("aj1").innerHTML = this.responseText;
+                }
+
+                xhttp.open("GET", "data.ajax")
+                xhttp.send();
+            }
+        </script>
+    </body>
+</head>
+
+</html>
